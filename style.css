@@ -1,0 +1,204 @@
+:root {
+    --bs-primary: #EE3738;
+    --bs-secondary: #FBDBC4;
+    --bs-text-dark: #4E2600;
+    --bs-gutter-x: 0;
+}
+
+#logo-rp img {
+    width: 100px;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-image: url("img/header-index.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+footer {
+    color: var(--bs-secondary);
+}
+
+footer span {
+    font-size: 0.8rem;
+}
+
+footer a:hover{
+    color: var(--bs-primary);
+} 
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--bs-primary);
+}
+
+button a:hover {
+    color:inherit
+}
+
+button {
+    background-color: transparent;
+    border-radius: 30px;
+    border: solid 1.5px;
+    padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+}
+
+.button-primary {
+    color: var(--bs-text-dark);
+}
+
+.button-primary:hover {
+    background-color: var(--bs-text-dark);
+    color: var(--bs-secondary);
+}
+
+.button-secondary{
+    color:var(--bs-secondary);
+}
+
+.button-secondary:hover {
+    background-color:var(--bs-secondary);
+    color: var(--bs-text-dark);
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav a {
+    color: var(--bs-text-dark);
+}
+
+nav a:hover {
+    color:var(--bs-primary)
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+section, #contacto {
+    min-height: 100vh;
+    margin: auto;
+    padding: 5rem 15%;
+}
+
+#contacto h3 {
+    font-family: Helvetica, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+
+input, textarea {
+    color: var(--bs-text-dark);
+    background-color: #fff;
+    border-radius: 3px;
+    border: none 1.5px;
+    padding: 0.3rem 1.2rem 0.3rem 0.5rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.intro {
+    margin: auto;
+    width: 70%;
+    padding-top: 3rem;
+}
+
+.title {
+    color: var(--bs-text-dark);
+    font-family: Georgia;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    padding: 1.2rem 0 4rem 0;
+}
+
+.subtitle {
+    color: var(--bs-primary);
+    font-family: Helvetica;
+    letter-spacing: 0.2rem;
+}
+
+.title-section {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.8rem;
+    padding-bottom: 3rem;
+    line-height: 2.8rem;
+}
+.fixed-image {
+    top:30%;
+    right: 0;
+}
+
+
+#sesiones-de-coaching, #testimonios, #contacto {
+    background-color: var(--bs-secondary);
+    color: var(--bs-text-dark);
+}
+
+#programas, #instagram {
+    background-color:var(--bs-text-dark);
+    color: var(--bs-secondary);
+}
+
+#sesiones-de-coaching ul{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    text-align: right;
+}
+
+#testimonios p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-style: italic;
+}
+
+#programas p {
+    padding-bottom: 1.8rem;
+}
+
+#contacto div {
+    max-width: 500px;
+}
+
+#footer-firma {
+    background-color: var(--bs-text-dark);
+}
+
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 2.5rem;
+        line-height: 2.6rem;
+    }
+    .title-section {
+        font-size: 2rem;
+        line-height: 2.1rem;
+        padding-bottom: 1rem;
+    }
+    #sesiones-de-coaching ul {
+        font-size: 1.2rem;
+        text-align: left;
+        line-height: 2rem;
+    }
+    #programas p {
+        padding-bottom: 1rem;
+    }
+    
+}
