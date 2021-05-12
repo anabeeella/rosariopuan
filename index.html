@@ -11,29 +11,41 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="container-fluid">
-    <header>
-        <nav class="nav px-3 mb-5 d-flex justify-content-between">
-                <div class="d-flex pt-3">
+    <!-- Probar de agregar más imágenes -->
+    <header id="header-index">
+        <nav id="nav-desktop" class="nav px-3 mb-5">
+                <div class="d-flex pt-3 col-4">
                     <a class="nav-link" href="coaching.html">Coaching</a>
                     <a class="nav-link" href="programas.html">Programas</a>
                     <a class="nav-link" href="bio.html">Bio</a>
                 </div>
-                <a id="logo-rp" class="nav-link px-5" href="#"><img src="img/logo-rp.png"></a>
-                <div class="d-flex pt-3">
+                <a id="logo-rp" class="nav-link px-5 col-4" href="#"><img src="img/logo-rp.png"></a>
+                <div class="d-flex justify-content-end pt-3 col-4">
                     <div class="dropdown nav-link">
                         <a class="dropdown-toggle" type="button" id="dropdown-nav-more" data-bs-toggle="dropdown" aria-expanded="false">Más</a>
                             <ul class="dropdown-menu" aria-labelledby="dropdown-nav-more">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="testimonios.html">Testimonios</a></li>
                             </ul>
                         </div>
-                <a class="nav-link">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
             </div>
+        </nav>
+        <nav id="nav-mobile" class="justify-content-between">
+            <img width=120 src="img/logo-rp.png">
+            <div class="dropdown p-3">
+                <a class="btn btn-secondary" href="#" role="button" id="dropdown-menu-mobile" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown-menu-mobile">
+                  <li><a class="dropdown-item" href="coaching.html">Coaching</a></li>
+                  <li><a class="dropdown-item" href="programas.html">Programas</a></li>
+                  <li><a class="dropdown-item" href="bio.html">Bio</a></li>
+                  <li><a class="dropdown-item" href="testimonios.html">Testimonios</a></li>
+                  <li><a class="dropdown-item" href="#contacto">Contacto</a></li>
+                </ul>
+              </div>
         </nav>
         <div class="intro">
             <span class="subtitle">Coaching & Consultoría Evolutiva</span>
-            <h1 class="title">"La pregunta correcta estructura y potencia la imaginación"</h1>
+            <h1 class="title mt-2">"La pregunta correcta estructura y potencia la imaginación"</h1>
             <button class="button-primary"><a href="coaching.html">Más info</a></button>
         </div>
     </header>
@@ -41,7 +53,11 @@
     <section id="sesiones-de-coaching">
         <div class="row">
             <h2 class="title-section">Sesiones de coaching</h2>
-            <p class="col-lg-6 col-sm-12">En muchas ocasiones, los problemas y posibilidades no están en el mundo, sino en nuestra forma de observarlos. El coaching nos permite convertirnos en observadores diferentes para hacer realidad aquello que deseamos. Evolucionamos en la medida en que nos conocemos.</p>
+            <div class="col-lg-6 col-sm-12 pt-2">
+                <p>En muchas ocasiones, los problemas y posibilidades no están en el mundo, sino en nuestra forma de observarlos. El coaching nos permite convertirnos en observadores diferentes para hacer realidad aquello que deseamos. Evolucionamos en la medida en que nos conocemos.</p>
+            <button class="button-primary mt-4"><a href="coaching.html">Leer más</a></button>
+            </div>
+            <!-- Agrandar tamaño de fuente, disminuir interlineado, acercar botón -->
             <ul class="col-lg-6 col-sm-12">
                 <li><a href="coaching.html">Individual</a></li>
                 <li><a href="coaching.html">Pareja</a></li>
@@ -49,9 +65,8 @@
                 <li><a href="coaching.html">Somos</a></li>
             </ul>
         </div>
-        <button class="mt-2 button-primary"><a href="coaching.html">Leer más</a></button>
     </section>
-    <section  class="m-auto" id="programas">
+    <section  class="m-auto position-relative" id="programas">
         <h2 class="title-section mb-4">Programas</h2>
         <div class="row">
             <div class="col-lg-6 col-xs-12">
@@ -65,49 +80,45 @@
             <div class="col-lg-6 col-xs-12">
                 <h3><a href="programas.html">Good vibrations</a></h3>
                 <p>Workshop sobre manejo saludable del estrés</p>
-                <h3>Programa de seguimiento de proyectos para mujeres*</h3>
+                <h3 class="col-sm-9">Programa de seguimiento de proyectos para mujeres*</h3>
                 <p>* Próximamente</p>
             </div>
         </div>
         <button class="button-secondary"><a href="programas.html">Ver todos</a></button>
+        <img class="col-lg-3 col-sm-3 fixed-image-right"src="img/home-testimonios.jpeg">
     </section>
-    <section id="testimonios" class="position-relative">
+    <section id="testimonios">
          <div class="row">
             <p class="col-lg-5 col-sm-8 col-xs-12 mb-5">“El profesionalismo, la dedicación y el interés genuino por el bienestar de los demás se nota. Además, las técnicas utilizadas durante la sesión, los ejercicios de respiración y las tareas estuvieron muy bien estructuradas” </p>
-            <span>- Alberto García Huitrón</span>
+            <span class="mb-4">- Alberto García Huitrón</span>
         </div>
-        <img>
         <button class="button-primary mt-2"><a href="testimonios.html">Ver todos</a></button>
-        <img class="col-lg-4 position-absolute fixed-image" src="img/home-testimonios.jpg">
-
     </section>
     <section id="instagram">
         <div class="row">
-            <img class="col-lg-3 col-sm-6 col-xs-12 mb-3" src="https://via.placeholder.com/300x300">
-            <img class="col-lg-3 col-sm-6 col-xs-12  mb-3" src="https://via.placeholder.com/300x300">
-            <img class="col-lg-3 col-sm-6 col-xs-12  mb-3" src="https://via.placeholder.com/300x300">
-            <img class="col-lg-3 col-sm-6 col-xs-12  mb-3" src="https://via.placeholder.com/300x300">
         </div>
         <a href="https://www.instagram.com/rosariopuan" class="d-block text-center py-5">Ir a Instagram</a>
     </section>
     </main>
+    <div class="window"></div>
     <footer>
-        <div id="contacto" class="row text-center">
+        <form id="contacto" class="row text-center">
             <div class="m-auto">
+                <img src="img/dp.png" width="50" class="mb-3">
                 <h3>Contacto</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipsineg elit, sed do eisusmod.</p>
-                <input type="text" class="col-12 mb-2" placeholder="Nombre">
-                <textarea class="col-12 mb-3" placeholder="Tu consulta"></textarea>
-                <button class="button button-primary">Enviar</button>
+                <input type="text" class="col-12 mb-2 form-control" placeholder="Nombre">
+                <input type="email" class="col-12 mb-2 form-control" placeholder="E-mail" required>
+                <textarea class="col-12 mb-3 form-control" placeholder="Mensaje"></textarea>
+                <button type="submit" class="button button-primary">Enviar</button>
             </div>
-        </div>
-        <div id="footer-firma" class="text-center">
-            <img src="https://via.placeholder.com/300x100" class="d-flex m-auto pt-5 pb-2">
-            <div class="pb-3">
-                <img src="https://via.placeholder.com/30x30">
-                <img src="https://via.placeholder.com/30x30">
+        </form>
+        <div id="footer-firma" class="px-3">
+            <img width=300 src="img/logo-rp-2.png" class="m-3">
+            <div class="d-flex justify-content-between">
+                <p>@RosarioPuan | Todos los derechos reservados 2021</p>
+                <p>Diseño y Programación: <a href="https://github.com/anabeeella">@anabeeella</a></p>
             </div>
-            <span>@RosarioPuan | Todos los derechos reservados | • | Diseño y Programación: <a href="https://github.com/anabeeella">@anabeeella</a></span>
         </div>
     </footer>
 </body>

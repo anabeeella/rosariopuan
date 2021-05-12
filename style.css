@@ -6,7 +6,7 @@
 }
 
 #logo-rp img {
-    width: 100px;
+    width: 85px;
 }
 
 body {
@@ -15,12 +15,34 @@ body {
 
 header {
     height: 100vh;
-    background-image: url("img/header-index.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: repeat;
     text-align: center;
 }
+
+#header-index {
+    background-image: url("img/header-index.png");
+}
+
+#header-coaching {
+    background-image: url("img/coaching-index.png");
+}
+
+#header-programas {
+    background-image: url("img/programas-index.png");
+}
+
+#header-bio {
+    background-image: url("img/coaching-index.png");
+}
+
+#header-testimonios {
+    background-image: url("img/coaching-index.png");
+}
+
+
 
 footer {
     color: var(--bs-secondary);
@@ -76,12 +98,42 @@ button {
     color: var(--bs-text-dark);
 }
 
-h3 {
+h3, #programs-page h4, #testimonios-page span, #coaching-page h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#programs-page h4 {
+    margin-top: -0.7rem;
+}
+
+
+#nav-mobile {
+    display: none;
+}
+
+.btn-secondary {
+    border-radius: 3px;
+ background-color: var(--bs-text-dark);
+ border: none;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: var(--bs-primary);
 }
 
 nav a {
     color: var(--bs-text-dark);
+}
+
+.dropdown-menu {
+    border: none;
+}
+.dropdown-item {
+    font-size: 0.9rem;
+    color: var(--bs-text-dark);
+}
+.dropdown-item:hover {
+    background-color:var(--bs-secondary);
 }
 
 nav a:hover {
@@ -105,15 +157,6 @@ section, #contacto {
 }
 
 
-input, textarea {
-    color: var(--bs-text-dark);
-    background-color: #fff;
-    border-radius: 3px;
-    border: none 1.5px;
-    padding: 0.3rem 1.2rem 0.3rem 0.5rem;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
 .intro {
     margin: auto;
     width: 70%;
@@ -125,6 +168,14 @@ input, textarea {
     font-family: Georgia;
     font-size: 3rem;
     line-height: 3.2rem;
+    padding: 1.2rem 0 4rem 0;
+}
+
+.title-page {
+    color: var(--bs-text-dark);
+    font-family: Georgia;
+    font-size: 2rem;
+    line-height: 2.2rem;
     padding: 1.2rem 0 4rem 0;
 }
 
@@ -140,25 +191,38 @@ input, textarea {
     padding-bottom: 3rem;
     line-height: 2.8rem;
 }
-.fixed-image {
-    top:30%;
+
+.fixed-image-right {
+    position: absolute;
+    top:80%;
     right: 0;
 }
 
+.fixed-image-left {
+    position: absolute;
+    left: 0;
+}
 
-#sesiones-de-coaching, #testimonios, #contacto {
+.text-reel {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: var(--bs-primary);
+}
+
+#sesiones-de-coaching, #testimonios, #contacto, #coaching-page, #bio-page {
     background-color: var(--bs-secondary);
     color: var(--bs-text-dark);
 }
 
-#programas, #instagram {
+#programas, #instagram, #programs-page, #testimonios-page {
     background-color:var(--bs-text-dark);
     color: var(--bs-secondary);
 }
 
 #sesiones-de-coaching ul{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
+    line-height: 2.6rem;
     text-align: right;
 }
 
@@ -177,28 +241,60 @@ input, textarea {
     max-width: 500px;
 }
 
+.window {
+    height: 200px;
+    background-image: url("img/window.png");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: var(--bs-secondary);
+}
+
+#contacto input, #contacto textarea {
+    background-color: #fff;
+    border: none;
+    color: var(--bs-text-dark);
+}
+
 #footer-firma {
     background-color: var(--bs-text-dark);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 @media (max-width: 576px) {
+    #nav-mobile {
+        display: flex;
+    }
+    #nav-desktop {
+        display: none;
+    }
     .title {
         font-size: 2.5rem;
         line-height: 2.6rem;
+        padding-bottom: 2rem;
     }
     .title-section {
         font-size: 2rem;
         line-height: 2.1rem;
         padding-bottom: 1rem;
     }
+    .intro {
+        padding-top: 2rem;
+    }
     #sesiones-de-coaching ul {
-        font-size: 1.2rem;
+        margin-top: 2rem;
+        font-size: 2rem;
         text-align: left;
-        line-height: 2rem;
+        line-height: 2.5rem;
     }
     #programas p {
         padding-bottom: 1rem;
     }
-    
+    .fixed-image-right {
+        display: none;
+    }
+    #contacto input, #contacto textarea {
+        font-size: 0.8rem;
+    }
 }
