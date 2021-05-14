@@ -9,8 +9,10 @@
     width: 85px;
 }
 
+
 body {
     font-family: Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -42,7 +44,9 @@ header {
     background-image: url("img/coaching-index.png");
 }
 
-
+.link-active {
+    color: var(--bs-primary);
+}
 
 footer {
     color: var(--bs-secondary);
@@ -241,6 +245,12 @@ section, #contacto {
     max-width: 500px;
 }
 
+.perfil-ro {
+    width: 300px;
+    height: 300px;
+    padding: 0;
+}
+
 .window {
     height: 200px;
     background-image: url("img/window.png");
@@ -279,6 +289,12 @@ section, #contacto {
         line-height: 2.1rem;
         padding-bottom: 1rem;
     }
+    .title-page {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding-bottom: 1rem;
+    }
+
     .intro {
         padding-top: 2rem;
     }
