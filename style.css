@@ -231,10 +231,16 @@ section, #contacto {
 }
 
 #testimonios p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    font-style: italic;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: auto;
+}
+
+.carousel-item {
+    height: 100vh;
 }
 
 #programas p {
@@ -260,6 +266,10 @@ section, #contacto {
     background-color: var(--bs-secondary);
 }
 
+#footer-firma ul {
+    text-align: right;
+}
+
 #contacto input, #contacto textarea {
     background-color: #fff;
     border: none;
@@ -270,6 +280,67 @@ section, #contacto {
     background-color: var(--bs-text-dark);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
+/* SLIDER TESTIMONIOS */
+
+.slideshow-container {
+    position: relative;
+  }
+
+  .mySlides {
+    display: none;
+    padding: 5rem;
+    text-align: center;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 1rem;
+    color: var(--bs-text-dark);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    color: var(--bs-primary);
+  }
+  
+  .dot-container {
+    text-align: center;
+    padding: 1.2rem;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: var(--bs-text-dark);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: var(--bs-primary);
+  }
+
+
+
+
 
 
 @media (max-width: 576px) {
@@ -294,7 +365,6 @@ section, #contacto {
         line-height: 2rem;
         padding-bottom: 1rem;
     }
-
     .intro {
         padding-top: 2rem;
     }
@@ -312,5 +382,13 @@ section, #contacto {
     }
     #contacto input, #contacto textarea {
         font-size: 0.8rem;
+    }
+    #testimonios {
+        margin: 0;
+        padding: 2rem;
+        font-size: 0.9rem;
+    }
+    .mySlides {
+        padding: 3rem;
     }
 }
