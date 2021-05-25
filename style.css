@@ -24,6 +24,7 @@ header {
     text-align: center;
 }
 
+/*Sections header images */
 #header-index {
     background-image: url("img/header-index.png");
 }
@@ -43,6 +44,7 @@ header {
 #header-testimonios {
     background-image: url("img/coaching-index.png");
 }
+
 
 .link-active {
     color: var(--bs-primary);
@@ -255,6 +257,7 @@ section, #contacto {
     width: 300px;
     height: 300px;
     padding: 0;
+    border-radius: 100%;
 }
 
 .window {
@@ -284,7 +287,7 @@ section, #contacto {
 }
 
 
-/* SLIDER TESTIMONIOS */
+/* Slider testimonios */
 
 .slideshow-container {
     position: relative;
@@ -339,9 +342,6 @@ section, #contacto {
   .active, .dot:hover {
     background-color: var(--bs-primary);
   }
-
-
-
 
 
 
