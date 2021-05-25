@@ -37,7 +37,7 @@ header {
 }
 
 #header-bio {
-    background-image: url("img/coaching-index.png");
+    background-image: url("img/bio-index.png");
 }
 
 #header-testimonios {
@@ -218,7 +218,7 @@ section, #contacto {
     color: var(--bs-text-dark);
 }
 
-#programas, #instagram, #programs-page, #testimonios-page {
+#programas, #instagram, #programs-page, #testimonios-page, #gracias-mensaje {
     background-color:var(--bs-text-dark);
     color: var(--bs-secondary);
 }
@@ -261,7 +261,6 @@ section, #contacto {
     height: 200px;
     background-image: url("img/window.png");
     background-attachment: fixed;
-    background-size: 100%;
     background-repeat: no-repeat;
     background-color: var(--bs-secondary);
 }
@@ -274,6 +273,9 @@ section, #contacto {
     background-color: #fff;
     border: none;
     color: var(--bs-text-dark);
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: -0.1rem;
 }
 
 #footer-firma {
